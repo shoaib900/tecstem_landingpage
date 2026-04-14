@@ -1,0 +1,197 @@
+import React from 'react'
+import img1 from '../assets/123.png'
+import "./home.css";
+
+const Home = () => {
+    return (
+        <React.Fragment>
+            <div className=''>
+                {/* Navigation Bar */}
+                <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                {/* hero section */}
+                <div id="carouselExampleCaptions" class="carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src={img1} class="d-block w-100" alt="..." height={600} />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src={img1} class="d-block w-100" alt="..." />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src={img1} class="d-block w-100" alt="..." />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                {/*  about section */}
+                <div className="container mt-5">
+                    <h2 className='text-center'>About my class</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ipsum, consequatur beatae modi delectus quaerat ipsa nostrum laudantium. Recusandae nobis sed quam, iure fugit earum eos a error doloremque cumque.</p>
+                </div>
+                {/* portfolio section */}
+                <div className="container-fluid mt-5">
+                    <h2 className='text-center'>portfolio my class</h2>
+                    <div className='d-flex flex-wrap justify-content-center'>
+                        <img className='m-4' src={img1} alt="" height={200} />
+                        <img className='m-4' src={img1} alt="" height={200} />
+                        <img className='m-4' src={img1} alt="" height={200} />
+                        <img className='m-4' src={img1} alt="" height={200} />
+                        <img className='m-4' src={img1} alt="" height={200} />
+                    </div>
+                </div>
+                {/* Services section */}
+                <div className="container mt-5 mb-5">
+                    <h2 className='text-center'>Services</h2>
+                    <div className="progress">HTML
+                        <div class="progress-bar" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-label="Segment two" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span style={{ color: "black" }}>HTML</span></div>
+                    </div>
+
+                    <br />
+
+                    <div className="progress" >
+                        <div class="progress-bar" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-label="Segment two" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"><span style={{ color: "black" }}>CSS</span></div>
+                    </div><br />
+
+                    <div className="progress" >
+                        <div class="progress-bar" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-label="Segment two" style={{ width: "80%" }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"><span style={{ color: "black" }}>JavaScript</span></div>
+                    </div><br />
+
+                    <div className="progress" >
+                        <div class="progress-bar" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-label="Segment two" style={{ width: "50%" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"><span style={{ color: "black" }}>React JS</span></div>
+                    </div>
+
+                </div>
+
+                {/* Contact us  */}
+                <h2 className='text-center'>Contact Us</h2>
+                <div className="card container">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputText1" class="form-label">username:</label>
+                            <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp" />
+                            <div id="textHelp" class="form-text">We'll never share your username with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        {/* <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" />
+                        </div> */}
+
+                        <div class="form-floating">
+                            <textarea class="form-control" style={{ height: "150px" }} placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                        </div>
+
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <div className="d-grid gap-2 mb-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                {/* bottom bar */}
+
+                <footer className='d-flex p-5 bg-dark justify-content-around' data-bs-theme="dark">
+                    <div className="card pe-5">
+                        <h2 className='text-end'>Links</h2>
+                        <ul>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                        </ul>
+                    </div>
+                    <div className="card pe-5"><h2>Views</h2>
+                        <ul>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                        </ul></div>
+                    <div className="card pe-5"><h2>Brands</h2>
+                        <ul>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                            <li>data 01</li>
+                        </ul></div>
+                </footer>
+
+
+
+
+
+            </div>
+        </React.Fragment>
+    )
+}
+
+export default Home
