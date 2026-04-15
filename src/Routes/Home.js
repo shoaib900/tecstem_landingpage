@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from '../assets/123.png'
+import { Link } from 'react-router-dom';
 import "./home.css";
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
                                     <span class="nav-link active" aria-current="page">Home</span>
                                 </li>
                                 <li class="nav-item">
-                                    <span class="nav-link">Link</span>
+                                    <Link class="nav-link" to={'/todo'}>Todo</Link>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
